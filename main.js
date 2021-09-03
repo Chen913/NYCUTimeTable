@@ -87,7 +87,7 @@ container.innerHTML = `
 	<label for='field_techInLife'>領域-社會中的科技與自然</label><br/>
   </fieldset>
   <input type='button' value='確認' onclick='filter()' class='filter-btn'>
-</form>`
+</form>`;
 document.body.appendChild(container);
 
 var customScript = document.createElement('script');
@@ -97,8 +97,8 @@ function changeDisplay(e){
 }
 
 function filter(){
-  var $$ = document.querySelectorAll.bind(document)
-  var $id = document.getElementById.bind(document)
+  var $$ = document.querySelectorAll.bind(document);
+  var $id = document.getElementById.bind(document);
   $$('[name="tr_three_char"]')?.forEach(e => e.style.display = 'none');
   document.querySelectorAll('table.table_list')?.forEach(e => {
     e.style.display = '';
@@ -129,13 +129,13 @@ function filter(){
   CheckGeneralEducation($id('core_social'));
   CheckGeneralEducation($id('core_science'));
   
-  CheckCrossField($id('cross_field_CS'))
-  CheckCrossField($id('cross_field_EE'))
-  CheckCrossField($id('cross_field_S'))
-  CheckCrossField($id('cross_field_E'))
-  CheckCrossField($id('cross_field_M'))
-  CheckCrossField($id('cross_field_HS'))
-  CheckCrossField($id('cross_field_Hk'))
+  CheckCrossField($id('cross_field_CS'));
+  CheckCrossField($id('cross_field_EE'));
+  CheckCrossField($id('cross_field_S'));
+  CheckCrossField($id('cross_field_E'));
+  CheckCrossField($id('cross_field_M'));
+  CheckCrossField($id('cross_field_HS'));
+  CheckCrossField($id('cross_field_Hk'));
   
   CheckGeneralEducation($id('basic_literacy'));
   CheckGeneralEducation($id('basic_reasoning'));
