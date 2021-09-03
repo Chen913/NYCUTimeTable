@@ -96,14 +96,6 @@ function changeDisplay(e){
 	document.getElementById('cross_field_box').style.display = (e.checked) ? 'block' : 'none';
 }
 
-function checkPlace(ctrl){
-	if(ctrl.checked)
-		$$('[name="cos_time"]')?.forEach(e => {
-			if(e.innerHTML.search(ctrl.value) != -1)
-				displayList.push(e.parentNode);
-		});
-}
-
 function filter(){
   var $$ = document.querySelectorAll.bind(document)
   var $id = document.getElementById.bind(document)
